@@ -3,7 +3,11 @@ Gold,1,../assets/images/resources/gold/gold_001.png,#EABA1B,#975A13,#FEF3A4,20
 Gold,5,../assets/images/resources/gold/gold_001.png,#EABA1B,#975A13,#FEF3A4,20
 Gold,10,../assets/images/resources/gold/gold_001.png,#EABA1B,#975A13,#FEF3A4,20
 Gold,20,../assets/images/resources/gold/gold_001.png,#EABA1B,#975A13,#FEF3A4,20
-Silk,1,../assets/images/resources/silk/silk_001.png,#961111,#961111,#EC7A66,20
-Silk,5,../assets/images/resources/silk/silk_001.png,#961111,#961111,#EC7A66,20
-Silk,10,../assets/images/resources/silk/silk_001.png,#961111,#961111,#EC7A66,20
-Silk,20,../assets/images/resources/silk/silk_001.png,#961111,#961111,#EC7A66,20
+Silk,1,../assets/images/resources/silk/silk_001.png,#AA57AB,#753C8E,#DBA8EF,20
+Silk,5,../assets/images/resources/silk/silk_001.png,#AA57AB,#753C8E,#DBA8EF,20
+Silk,10,../assets/images/resources/silk/silk_001.png,#AA57AB,#753C8E,#DBA8EF,20
+Silk,20,../assets/images/resources/silk/silk_001.png,#AA57AB,#753C8E,#DBA8EF,20
+Spice,1,../assets/images/resources/spice/spice_001.png,#EC7332,#BA4919,#EC7332,20
+Spice,5,../assets/images/resources/spice/spice_001.png,#EC7332,#BA4919,#EC7332,20
+Spice,10,../assets/images/resources/spice/spice_001.png,#EC7332,#BA4919,#EC7332,20
+Spice,20,../assets/images/resources/spice/spice_001.png,#EC7332,#BA4919,#EC7332,20
