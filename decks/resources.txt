@@ -1,0 +1,20 @@
+LINKMULTI = Count
+LINK = "resources.csv"
+
+; Settings
+UNIT = MM
+PAGE = 210, 297, PORTRAIT
+; BORDER = ROUNDED, #000000, 2
+MARGINS = 10, 10, 5, 5
+CARDSIZE = 20, 20
+
+VISUAL=, 10, 10
+;Font(size)
+FONT=Arial,14,,[DARK COLOR]
+;Amount
+TEXT="1-{(AMOUNT)}",[AMOUNT],0%,{2733/50}%,{3983/40}%,{8389/200}%,CENTER,CENTER
+;Image(size)
+IMAGE="1-{(IMAGE)}",[IMAGE],15.5%,3%,70%,70%
+;Circle(size)
+CIRCLE=1-60,{233/50}%,{233/50}%,90%,90%,[DARK COLOR],EMPTY,0.4
+ENDVISUAL
