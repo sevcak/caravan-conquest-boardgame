@@ -9,15 +9,25 @@ MARGINS = 10, 10, 5, 5
 CARDSIZE = 60, 80
 
 ; Icons
-ICON = , S, ../assets/images/icons/speed.png
-ICON = , C, ../assets/images/icons/carry_capacity.png
+HTMLIMAGE = , (speed_icon), ../assets/images/icons/speed.png, 1, 1, P
 
 VISUAL=S, 10, 10
-FONT=Arial,26,B,#000000
+;Font(size)
+FONT=Baskerville Old Face,26,I,#000000,#FFFFFF,0,0,0,0,2
 ;Name
 TEXT="1-{(NAME)}",[NAME],0%,{1523/600}%,100%,{1873/150}%
-FONT=Arial,16,,#000000
+;Font(size)
+FONT=Baskerville Old Face,12,,#000000
 ;Type
-TEXT="1-{(TYPE)}",[TYPE],{-169/150}%,{373/25}%,{44999/450}%,{419/40}%
-IMAGE="1-{(IMAGE)}",[IMAGE],{543/25}%,{80/3}%,{9499/150}%,{28507/600}%
+TEXT="1-{(TYPE)}",[TYPE],{-169/150}%,{2857/200}%,{44999/450}%,{419/40}%
+;Description(size)
+TEXT="1-{(DESCRIPTION)}",[DESCRIPTION],{2221/450}%,{8203/120}%,90%,20%,CENTER,WORDWRAP
+;Image(size)
+IMAGE="1-{(IMAGE)}",[IMAGE],{12059/450}%,{14857/600}%,50%,40%
+;Font(size)
+FONT=Baskerville Old Face,20,,#000000
+;Speed(size)
+TEXT="1-{(SPEED)}",[SPEED],{3643/90}%,{4291/50}%,20%,10%
+;Image(size)
+IMAGE=,"../assets/images/icons/speed.png",{15803/450}%,{12857/150}%,10%,10%,0,P
 ENDVISUAL
