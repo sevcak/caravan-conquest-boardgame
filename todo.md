@@ -2,7 +2,7 @@
 
 ## Lukáš
 
-    [] zetony
+    [x] zetony
     [] figurky
     [] kone/karavan -> veci co mas vylozene
     [] treti clen
