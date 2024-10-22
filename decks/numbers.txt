@@ -1,0 +1,18 @@
+LINKMULTI = Count
+LINK = "numbers.csv"
+
+; Settings
+UNIT = MM
+PAGE = 210, 297, PORTRAIT
+MARGINS = 10, 10, 5, 5
+CARDSIZE = 20, 20
+
+
+VISUAL=S, 10, 10
+;Circle(size)
+CIRCLE=,4.5%,5%,90%,90%,#000000,#F0F0F0,.6
+;HTMLFont(size)
+HTMLFONT=FontName,Baskerville Old Face,26,B,#000000,CENTER,0,0,0,,,0,0,,.2
+;HTMLText(size)
+HTMLTEXT="1-{(AMOUNT)}",[AMOUNT],5.5%,23%,90%,50%,#FFFFFF,0,AT,100,FontName,FontName
+ENDVISUAL
