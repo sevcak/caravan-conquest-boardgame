@@ -1,6 +1,7 @@
 # ✅ Caravan Conquest To-Do List
 
     [] pravidla
+    [] basic map preset
 
 ## Lukáš
 
