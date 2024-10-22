@@ -1,0 +1,18 @@
+LINKMULTI = Count
+LINK = "tiles.csv"
+
+; Settings
+UNIT = CM
+CARDSIZE = 3, 3
+PAGE = 21, 29.7, PORTRAIT
+BORDER = RECTANGLE, #000000, 0.05
+
+; Visual
+VISUAL=, 10, 10
+FONT=Papyrus,14,,#000000
+; Name
+TEXT="1-{(NAME)}",[NAME],5.8%,79%,89.2%,19.2%
+IMAGE="1-{(IMAGE)}",[IMAGE],14.6%,4.2%,73%,73%
+; Image frame
+RECTANGLE=,17.6%,3.6%,67.8%,70.6%,#3D0C02#000000#000000@0,EMPTY,0.05
+ENDVISUAL

@@ -1,0 +1,8 @@
+Name,Image,Count
+Desert,../assets/images/tiles/desert.png,6
+Oasis,../assets/images/tiles/oasis.png,3
+Mountains,../assets/images/tiles/mountains.png,3
+Grasslands,../assets/images/tiles/grass.png,6
+River,../assets/images/tiles/river.png,3
+City,../assets/images/tiles/city.png,2
+Trade camp,../assets/images/tiles/trade-camp.png,2
