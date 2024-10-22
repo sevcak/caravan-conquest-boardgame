@@ -4,7 +4,7 @@ LINK = "steads.csv"
 ; Settings
 UNIT = MM
 PAGE = 210, 297, PORTRAIT
-BORDER = RECTANGLE, #000000, 2
+BORDER = RECTANGLE, #000000, 1
 MARGINS = 10, 10, 5, 5
 CARDSIZE = 60, 80
 
@@ -27,7 +27,11 @@ IMAGE="1-{(IMAGE)}",[IMAGE],{12059/450}%,{14857/600}%,50%,40%
 ;Font(size)
 FONT=Baskerville Old Face,20,,#000000
 ;Speed(size)
-TEXT="1-{(SPEED)}",[SPEED],{3643/90}%,{4291/50}%,20%,10%
-;Image(size)
-IMAGE=,"../assets/images/icons/speed.png",{15803/450}%,{12857/150}%,10%,10%,0,P
+TEXT="1-{(SPEED)}",[SPEED],{22277/450}%,{17291/200}%,20%,10%,LEFT
+;Speed Icon(size)
+IMAGE=,"../assets/images/icons/speed.png",{952/25}%,{3437/40}%,10%,10%,0,P
+;Cost(size)
+TEXT="1-{(COST)}",[COST],{409/25}%,{51809/600}%,20%,10%,LEFT
+;Cost Icon(size)
+IMAGE=,"../assets/images/resources/gold/gold_001.png",{349/75}%,{17291/200}%,10%,10%,0,P
 ENDVISUAL

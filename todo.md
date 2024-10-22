@@ -6,7 +6,7 @@
 ## Lukáš
 
     [x] figurky
-    [] kone/karavan -> veci co mas vylozene
+    [x] kone/karavan -> veci co mas vylozene
     [] treti clen
     [] zetony pre indikatory hodnot materialov
     [] legenda pre tiles a ikonky
