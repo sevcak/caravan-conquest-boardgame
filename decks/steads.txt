@@ -1,0 +1,23 @@
+LINKMULTI = Count
+LINK = "steads.csv"
+
+; Settings
+UNIT = MM
+PAGE = 210, 297, PORTRAIT
+BORDER = RECTANGLE, #000000, 2
+MARGINS = 10, 10, 5, 5
+CARDSIZE = 60, 80
+
+; Icons
+ICON = , S, ../assets/images/icons/speed.png
+ICON = , C, ../assets/images/icons/carry_capacity.png
+
+VISUAL=S, 10, 10
+FONT=Arial,26,B,#000000
+;Name
+TEXT="1-{(NAME)}",[NAME],0%,{1523/600}%,100%,{1873/150}%
+FONT=Arial,16,,#000000
+;Type
+TEXT="1-{(TYPE)}",[TYPE],{-169/150}%,{373/25}%,{44999/450}%,{419/40}%
+IMAGE="1-{(IMAGE)}",[IMAGE],{543/25}%,{80/3}%,{9499/150}%,{28507/600}%
+ENDVISUAL
