@@ -5,7 +5,7 @@
 
 ## Lukáš
 
-    [] figurky
+    [x] figurky
     [] kone/karavan -> veci co mas vylozene
     [] treti clen
     [] zetony pre indikatory hodnot materialov

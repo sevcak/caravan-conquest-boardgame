@@ -1,0 +1,14 @@
+; LINKMULTI = Count
+LINK = "players.csv"
+
+; Settings
+UNIT = MM
+PAGE = 210, 297, PORTRAIT
+MARGINS = 10, 10, 5, 5
+CARDSIZE = 20, 20
+
+
+VISUAL=S, 10, 10
+;Circle(size)
+CIRCLE=1-6,{122/5}%,{1037/200}%,50%,50%,[COLOR]
+ENDVISUAL
