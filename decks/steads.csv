@@ -1,5 +1,5 @@
-Name,Type,Carry capacity,Speed,Description,Image,Count
-Epona,Horse,50,5,,../assets/images/steads/horses/horse.png,12
-Roach,Horse,70,4,,../assets/images/steads/horses/horse.png,12
-Donkey,Donkey,100,2,,../assets/images/steads/donkeys/donkey.png,6
-Fidget,Camel,80,3,Not affected by the desert speed penalty.,../assets/images/steads/camels/camel.png,6
+Name,Type,Speed,Description,Image,Count
+Epona,Horse,5,,../assets/images/steads/horses/horse.png,12
+Roach,Horse,4,,../assets/images/steads/horses/horse.png,12
+Donkey,Donkey,2,,../assets/images/steads/donkeys/donkey.png,6
+Fidget,Camel,3,Not affected by the desert speed penalty.,../assets/images/steads/camels/camel.png,6
