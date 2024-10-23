@@ -14,4 +14,5 @@
         [x] start, ciel
         [] pridat typy na trade camps
     [x] druhy tiles
-    [] efekty, obchody
+    [] efekty
+    [] obchody
