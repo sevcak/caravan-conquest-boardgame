@@ -14,6 +14,7 @@
 ## Ľubo
 
     [] tiles
-        [] start, ciel
-    [] druhy tiles
+        [x] start, ciel
+        [] pridat typy na trade camps
+    [x] druhy tiles
     [] efekty, obchody
