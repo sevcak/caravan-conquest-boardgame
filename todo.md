@@ -10,9 +10,9 @@
 
 ## Ľubo
 
-    [] tiles
+    [x] tiles
         [x] start, ciel
-        [] pridat typy na trade camps
+        [x] pridat typy na trade camps
     [x] druhy tiles
     [] efekty
-    [] obchody
+    [x] obchody
