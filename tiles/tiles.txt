@@ -7,6 +7,10 @@ CARDSIZE = 3, 3
 PAGE = 21, 29.7, PORTRAIT
 BORDER = RECTANGLE, #000000, 0.05
 
+; Icons
+ICON = , S, "../assets/images/resources/silk/silk_001.png"
+ICON = , P, "../assets/images/resources/spice/spice_001.png"
+
 ; Visual
 VISUAL=, 10, 10
 FONT=Papyrus,14,,#000000
@@ -15,7 +19,6 @@ TEXT="1-{(NAME)}",[NAME],5.8%,79%,89.2%,19.2%
 IMAGE="1-{(IMAGE)}",[IMAGE],14.6%,4.2%,73%,73%
 ;Image frame
 RECTANGLE=,17.6%,3.6%,67.8%,70.6%,#3D0C02#000000#000000@0,EMPTY,0.05
-;Trade icons
-IMAGE=29-31,"../assets/images/resources/silk/silk_001.png",3%,3%,12%,12%
-IMAGE=32-34,"../assets/images/resources/spice/spice_001.png",3%,3%,12%,12%
+; Icons
+ICONS="1-{(ICON)}",[ICON],2%,3%,15%,45%,15%,15%,0,,CENTER,TOP
 ENDVISUAL
