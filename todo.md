@@ -1,18 +1,18 @@
 # ✅ Caravan Conquest To-Do List
 
-    [] pravidla
     [] basic map preset
+    [] lepsi system na pocitanie - appka??
+    [] rozne hodnoty v tradecampoch ???
 
 ## Lukáš
 
-    [] treti clen
-    [X] legenda pre tiles a ikonky
+    [] tile random efekty + farby/grafika
+    [] forma na tiles (3. prototyp)
+
 
 ## Ľubo
 
-    [x] tiles
-        [x] start, ciel
-        [x] pridat typy na trade camps
-    [x] druhy tiles
-    [] efekty
-    [x] obchody
+    [] excel - tabulka pre pocitanie
+    [] tava, karavan, spice balancing
+    [] predaj vybavenia/ zvierat
+    
