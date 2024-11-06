@@ -1,0 +1,22 @@
+LINKMULTI = Count
+LINK = "tiles.csv"
+
+; Settings
+UNIT = CM
+CARDSIZE = 3, 3
+PAGE = 21, 29.7, PORTRAIT
+BORDER = RECTANGLE, #000000, 0.05
+
+; Icons
+ICON = , S, "../assets/images/resources/silk/silk_001.png"
+ICON = , P, "../assets/images/resources/spice/spice_001.png"
+
+; Visual
+VISUAL=, 10, 10
+;Image(size)
+IMAGE="1-{(IMAGE)}",[IMAGE],{-593/150}%,{-593/300}%,110%,110%
+;Icons(size)
+ICONS="1-{(ICON)}",[ICON],2%,3%,20%,40%,15%,15%,0,TN,CENTER,TOP
+;Overlay
+IMAGE="1-{(OVERLAY)}",[OVERLAY],{593/100}%,{353/50}%,{1757/20}%,{1757/20}%
+ENDVISUAL
