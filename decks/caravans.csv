@@ -1,3 +1,3 @@
 Name,Type,Capacity,Cost,Description,Image,Count
-Basic Caravan,Caravan wagon,120,40,,../assets/images/caravans/caravan.png,4
-Reinforced Caravan,Caravan wagon,200,80,,../assets/images/caravans/caravan_reinforced.png,4
+Basic Caravan,Caravan wagon,120,40,,../assets/images/caravans/caravan.png,0
+Reinforced Caravan,Caravan wagon,200,60,,../assets/images/caravans/caravan_reinforced.png,4

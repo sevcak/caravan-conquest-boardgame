@@ -1,7 +1,7 @@
 # ✅ Caravan Conquest To-Do List
 
     [] basic map preset
-    [] lepsi system na pocitanie - appka??
+    [X] lepsi system na pocitanie - appka??
     [] rozne hodnoty v tradecampoch ???
 
 ## Lukáš
@@ -12,7 +12,7 @@
 
 ## Ľubo
 
-    [] excel - tabulka pre pocitanie
-    [] tava, karavan, spice balancing
+    [X] excel - tabulka pre pocitanie
+    [X] tava, karavan, spice balancing
     [] predaj vybavenia/ zvierat
     
