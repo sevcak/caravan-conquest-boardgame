@@ -14,5 +14,5 @@
 
     [X] excel - tabulka pre pocitanie
     [X] tava, karavan, spice balancing
-    [] predaj vybavenia/ zvierat
+    [X] predaj vybavenia/ zvierat
     
