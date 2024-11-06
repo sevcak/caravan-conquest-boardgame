@@ -1,11 +1,12 @@
 Name,Image,Icon,Count,Overlay
-Desert,../assets/images/tiles/desert.png,,46,
-Oasis,../assets/images/tiles/oasis.png,,8,
-Mountains,../assets/images/tiles/mountains.png,,10,
-Grasslands,../assets/images/tiles/grasslands.png,,26,
-River,../assets/images/tiles/river.png,,16,
+Desert,../assets/images/tiles/desert.png,,50,
+Oasis,../assets/images/tiles/oasis.png,,10,
+Mountains,../assets/images/tiles/mountains.png,,20,
+Grasslands,../assets/images/tiles/grasslands.png,,36,
+River,../assets/images/tiles/river.png,,20,
 City,../assets/images/tiles/grasslands.png,,12,../assets/images/tiles/city.png
 Trade camp,../assets/images/tiles/grasslands.png,S,10,../assets/images/tiles/trade-camp.png
 Trade camp,../assets/images/tiles/grasslands.png,P,10,../assets/images/tiles/trade-camp.png
 Start,../assets/images/tiles/grasslands.png,,1,../assets/images/tiles/start.png
 Finish,../assets/images/tiles/grasslands.png,,1,../assets/images/tiles/finish.png
+Treasure,,,4,../assets/images/treasure/chest.png
