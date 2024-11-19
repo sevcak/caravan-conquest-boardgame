@@ -19,6 +19,6 @@
     [X] formulacie akcnych kariet
     [X] zmenit kapacitu basic karavanu
     [X] zmena cien u steads
-    [] Ikony na akcnych kartach
+    [X] Ikony na akcnych kartach
     [X] vylepsit oazy v akcnych kartach
     
