@@ -1,18 +1,24 @@
 # ✅ Caravan Conquest To-Do List
 
     [] basic map preset
-    [X] lepsi system na pocitanie - appka??
     [] rozne hodnoty v tradecampoch ???
+    [] GDP
+
 
 ## Lukáš
 
     [] tile random efekty + farby/grafika
     [] forma na tiles (3. prototyp)
+    [] UI appky pre jedneho - viac hracov
+    [] zmenit pravidla o pokladoch a ukonceni hry a oazach
+    [] vytlacit figurky
 
 
 ## Ľubo
 
-    [X] excel - tabulka pre pocitanie
-    [X] tava, karavan, spice balancing
-    [X] predaj vybavenia/ zvierat
+    [] formulacie akcnych kariet
+    [] zmenit kapacitu basic karavanu
+    [] zmena cien u steads
+    [] Ikony na akcnych kartach
+    [] vylepsit oazy v akcnych kartach
     
