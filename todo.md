@@ -16,9 +16,9 @@
 
 ## Ľubo
 
-    [] formulacie akcnych kariet
+    [X] formulacie akcnych kariet
     [] zmenit kapacitu basic karavanu
     [] zmena cien u steads
     [] Ikony na akcnych kartach
-    [] vylepsit oazy v akcnych kartach
+    [X] vylepsit oazy v akcnych kartach
     
