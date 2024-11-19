@@ -21,7 +21,9 @@ valuable goods and gold.
     - You interact with tile only when you stand on it,
       not when you are walking through.
     - Trade Camps: Trade goods for gold.
-    - Cities: Buy upgrades for gold.
+    - Cities: Buy upgrades with gold or sell them for half of the original price.
+4. Special encounters: draw a special encounter at the start of your turn.
+5. Treasure: Collect treasure and gain 40 gold.
 
 ## Trading
 
@@ -34,6 +36,7 @@ There are two types of Trade camps:
 
 - Upgrade your caravan to increase capacity.
 - Buy better steads to increase speed and gain special abilities.
+- Sell your upgrades to gain even more gold
 
 ## Winning the Game
 

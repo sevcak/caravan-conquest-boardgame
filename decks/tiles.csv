@@ -5,8 +5,8 @@ Mountains,../assets/images/tiles/mountains.png,,20,
 Grasslands,../assets/images/tiles/grasslands.png,,36,
 River,../assets/images/tiles/river.png,,20,
 City,../assets/images/tiles/grasslands.png,,12,../assets/images/tiles/city.png
-Trade camp,../assets/images/tiles/grasslands.png,S,10,../assets/images/tiles/trade-camp.png
-Trade camp,../assets/images/tiles/grasslands.png,P,10,../assets/images/tiles/trade-camp.png
+Trade camp,../assets/images/tiles/grasslands.png,S,7,../assets/images/tiles/trade-camp.png
+Trade camp,../assets/images/tiles/grasslands.png,P,13,../assets/images/tiles/trade-camp.png
 Start,../assets/images/tiles/grasslands.png,,1,../assets/images/tiles/start.png
 Finish,../assets/images/tiles/grasslands.png,,1,../assets/images/tiles/finish.png
 Treasure,,,4,../assets/images/treasure/chest.png
