@@ -3,95 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caravan Conquest Resource Management</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .container { display: flex; justify-content: space-around; margin-top: 20px; }
-        .player { border: 1px solid #ccc; padding: 10px; width: 300px; }
-        h2 { text-align: center; }
-        input { width: 100%; margin-bottom: 10px; }
-        button { width: 100%; padding: 10px; margin-top: 10px; }
-    </style>
+    <title>Merchant's Ledger</title>
+    <link rel="stylesheet" href="../assets/web_styles/global.css">
+    <link rel="stylesheet" href="../assets/web_styles/ledger.css">
 </head>
 <body>
+    <header>
+    <nav>
+        <a class="logo" href="../">
+            <img src="../assets/images/logo/caravan_conquest_logo_orange.svg" alt="Caravan Conquest">
+        </a>
+    </nav>
+    </header>
 
-<h1>Caravan Conquest Resource Management</h1>
-
-<div class="container">
-    <div class="player" id="player1">
-        <h2>Player 1</h2>
-        <label>Gold:</label>
-        <input type="number" id="gold1" value="5" min="0" onchange="updateResources(1)">
-
-        <label>Spice:</label>
-        <input type="number" id="spice1" value="15" min="0" onchange="updateResources(1)">
-
-        <label>Silk:</label>
-        <input type="number" id="silk1" value="10" min="0" onchange="updateResources(1)">
-
-        <label>Capacity:</label>
-        <input type="number" id="capacity1" value="10" min="0" onchange="updateResources(1)">
-
-        <h3>Total Resources: <span id="totalResources1">0</span></h3>
-        <h3>Remaining Capacity: <span id="remainingCapacity1">10</span></h3>
-
-        <button onclick="resetResources(1)">Reset to Initial Values</button>
+    <div class="container">
+        <div class="header">
+            <h1>The Travelling Merchant's Ledger</h1>
+            <select id="playerCount" class="player-select">
+                <option value="1">1 Player</option>
+                <option value="2" selected>2 Players</option>
+                <option value="3">3 Players</option>
+                <option value="4">4 Players</option>
+                <option value="5">5 Players</option>
+                <option value="6">6 Players</option>
+                <option value="7">7 Players</option>
+                <option value="8">8 Players</option>
+            </select>
+        </div>
+        <div id="playersContainer" class="players-container">
+            <!-- Player cards will be inserted here -->
+        </div>
     </div>
 
-    <div class="player" id="player2">
-        <h2>Player 2</h2>
-        <label>Gold:</label>
-        <input type="number" id="gold2" value="5" min="0" onchange="updateResources(2)">
+    <script>
+        const initial_stats = {
+            gold: 10,
+            spice: 10,
+            silk: 5,
+            capacity: 90,
+        };
 
-        <label>Spice:</label>
-        <input type="number" id="spice2" value="15" min="0" onchange="updateResources(2)">
+        class PlayerCard {
+            constructor(playerNumber) {
+                this.playerNumber = playerNumber;
+                this.resources = {
+                    gold: initial_stats.gold,
+                    spice: initial_stats.spice,
+                    silk: initial_stats.silk,
+                    capacity: initial_stats.capacity,
+                };
+            }
 
-        <label>Silk:</label>
-        <input type="number" id="silk2" value="10" min="0" onchange="updateResources(2)">
+            calculateTotals() {
+                const total = this.resources.gold + this.resources.spice + this.resources.silk;
+                const remaining = this.resources.capacity - total;
+                return { total, remaining };
+            }
 
-        <label>Capacity:</label>
-        <input type="number" id="capacity2" value="10" min="0" onchange="updateResources(2)">
+            createHTML() {
+                const card = document.createElement('div');
+                card.className = 'player-card';
+                card.innerHTML = `
+                    <h2 class="player-title">Player ${this.playerNumber}</h2>
+                    <div class="player-content">
+                        <div class="resource-inputs">
+                            <div class="input-group">
+                                <label>Gold:</label>
+                                <input type="number" class="gold" value="${this.resources.gold}" min="0">
+                            </div>
+                            <div class="input-group">
+                                <label>Spice:</label>
+                                <input type="number" class="spice" value="${this.resources.spice}" min="0">
+                            </div>
+                            <div class="input-group">
+                                <label>Silk:</label>
+                                <input type="number" class="silk" value="${this.resources.silk}" min="0">
+                            </div>
+                            <div class="input-group">
+                                <label>Capacity:</label>
+                                <input type="number" class="capacity" value="${this.resources.capacity}" min="0">
+                            </div>
+                        </div>
+                        <div class="totals">
+                            <div class="total-item">Total Resources: <span class="total-resources bold">0</span></div>
+                            <div class="total-item">Remaining Capacity: <span class="remaining-capacity bold">10</span></div>
+                            <button class="reset-button button">Reset</button>
+                        </div>
+                    </div>
+                `;
 
-        <h3>Total Resources: <span id="totalResources2">0</span></h3>
-        <h3>Remaining Capacity: <span id="remainingCapacity2">10</span></h3>
+                this.setupEventListeners(card);
+                return card;
+            }
 
-        <button onclick="resetResources(2)">Reset to Initial Values</button>
-    </div>
-</div>
+            resetStats() {
+                this.resources = {
+                   gold: initial_stats.gold,
+                   spice: initial_stats.spice,
+                   silk: initial_stats.silk,
+                   capacity: initial_stats.capacity,
+                   animal_1_speed: initial_stats.animal_1_speed,
+                   animal_2_speed: initial_stats.animal_2_speed
+                }
+            }
 
-<script>
-// Function to sanitize inputs
-function sanitizeInput(value) {
-    return Math.max(0, parseInt(value) || 0); // Ensure non-negative integers
-}
+            setupEventListeners(card) {
+                const inputs = card.querySelectorAll('input');
+                const resetButton = card.querySelector('.reset-button');
+                const totalResourcesSpan = card.querySelector('.total-resources');
+                const remainingCapacitySpan = card.querySelector('.remaining-capacity');
 
-// Update resources and calculate totals
-function updateResources(player) {
-    const gold = sanitizeInput(document.getElementById(`gold${player}`).value);
-    const spice = sanitizeInput(document.getElementById(`spice${player}`).value);
-    const silk = sanitizeInput(document.getElementById(`silk${player}`).value);
-    const capacity = sanitizeInput(document.getElementById(`capacity${player}`).value);
+                const updateTotals = () => {
+                    const { total, remaining } = this.calculateTotals();
+                    totalResourcesSpan.textContent = total;
+                    remainingCapacitySpan.textContent = remaining;
 
-    const totalResources = gold + spice + silk;
-    const remainingCapacity = capacity - totalResources;
+                    // Remove any existing warning
+                    const existingWarning = card.querySelector('.capacity-warning');
+                    if (existingWarning) {
+                        existingWarning.remove();
+                    }
 
-    document.getElementById(`totalResources${player}`).innerText = totalResources;
-    document.getElementById(`remainingCapacity${player}`).innerText = remainingCapacity >= 0 ? remainingCapacity : "Over Capacity!";
-}
+                    // Check if over capacity
+                    if (remaining < 0) {
+                        // Calculate speed penalty
+                        const overCapacity = Math.abs(remaining);
+                        const basePenalty = 1; // First unit of speed reduction
+                        const additionalPenalty = Math.floor(overCapacity / 10); // Additional reduction for every 10 units over
+                        const totalSpeedPenalty = basePenalty + additionalPenalty;
 
-// Reset resources to initial values
-function resetResources(player) {
-    document.getElementById(`gold${player}`).value = 5;
-    document.getElementById(`spice${player}`).value = 15;
-    document.getElementById(`silk${player}`).value = 10;
 
-    // Optionally reset capacity to a default value (e.g., 10)
-    document.getElementById(`capacity${player}`).value = 120;
+                        // Create and add warning
+                        const warningElement = document.createElement('div');
+                        warningElement.classList.add('capacity-warning', 'text-danger');
+                        warningElement.innerHTML = `⚠️ Speed reduced by ${totalSpeedPenalty} due to over-encumberence.`;
 
-    // Update resources after resetting
-    updateResources(player);
-}
-</script>
+                        // Insert the warning after the speed element
+                        card.querySelector('.remaining-capacity').parentElement.after(warningElement);
+                    }
+                };
 
+                inputs.forEach(input => {
+                    input.addEventListener('change', (e) => {
+                        const value = parseInt(e.target.value) || 0;
+                        this.resources[input.className] = value;
+                        updateTotals();
+                    });
+                });
+
+                resetButton.addEventListener('click', () => {
+                    this.resources = {
+                        gold: 0,
+                        spice: 0,
+                        silk: 0,
+                        capacity: 10
+                    };
+                    inputs.forEach(input => {
+                        input.value = this.resources[input.className];
+                    });
+                    updateTotals();
+                });
+
+                updateTotals();
+            }
+        }
+
+        class MerchantsLedger {
+            constructor() {
+                this.players = [];
+                this.playerCount = 2;
+                this.init();
+            }
+
+            init() {
+                this.setupPlayerCountSelector();
+                this.renderPlayers();
+            }
+
+            setupPlayerCountSelector() {
+                const selector = document.getElementById('playerCount');
+                selector.addEventListener('change', (e) => {
+                    this.playerCount = parseInt(e.target.value);
+                    this.renderPlayers();
+                });
+            }
+
+            renderPlayers() {
+                const container = document.getElementById('playersContainer');
+                container.innerHTML = '';
+                
+                for (let i = 0; i < this.playerCount; i++) {
+                    const playerCard = new PlayerCard(i + 1);
+                    container.appendChild(playerCard.createHTML());
+                }
+            }
+        }
+
+        // Initialize the application
+        new MerchantsLedger();
+    </script>
 </body>
 </html>
+
