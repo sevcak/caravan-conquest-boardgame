@@ -1,4 +1,4 @@
-![Caravan Conquest](./assets/images/logo/caravan_conquest_logo_orange_shadow.png)\
+![Caravan Conquest](./assets/images/logo/caravan_conquest_logo_orange_shadow.png)
 
 In Caravan Conquest, players embark on an adventurous journey across a vibrant,
 tile-based map filled with diverse terrains and hidden treasures. Each player
