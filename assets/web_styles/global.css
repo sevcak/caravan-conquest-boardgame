@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sigmar+One&display=swap');
 
+:root {
+    font-size: 10px;
+}
+
+@media (min-width: 600px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
 h1, h2, h3, h4 {
     font-weight: 700;
     color: #DF8637;
@@ -7,7 +17,7 @@ h1, h2, h3, h4 {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     background: linear-gradient(180deg, #FBF0DD 39.9%, #F4DEB6 143.11%);
 
     font-family: 'Averia Sans Libre', sans-serif;
