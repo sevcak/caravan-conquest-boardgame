@@ -1,6 +1,6 @@
 # Caravan Conquest
 
-Lukáš Ševc, Ľubomír Vargovčík
+Lukáš Ševc (550335), Ľubomír Vargovčík (550559)
 
 ---
 
@@ -31,20 +31,20 @@ As players traverse the map, they must strategically manage their inventory of g
 balancing the need for speed with the desire to collect as many valuable items
 as possible. The game features a dynamic trading system where players can exchange
 goods for gold at specific locations, with the value of goods diminishing for those
-who arrive after the first player reaches the goal. This creates a sense of
-urgency and competition, compelling players to make tactical decisions about when
+who arrive after the first player reaches the finish. This creates a sense of
+urgency and competition, forcing players to make tactical decisions about when
 to trade and when to press forward.
 
 The game includes elements of resource management, where players can upgrade their
-caravans to enhance capacity or speed, making each turn crucial for long-term
+caravans and animals to enhance capacity or speed, making each turn crucial for long-term
 strategy. The rich interactions and varying encounters ensure that no two games
 are the same, promoting replayability and strategic depth.
 
 ## Core Mechanics
 
-* **Turn progression** through moving around the world and triggering encounters,
+* **Turn progression** through moving around the map and triggering encounters,
                        trading, etc.
-* **Caravan improvement** in cities.
+* **Equipment upgrade** in cities.
 * **Resource trading** in trade camps.
 
 ## Feature Set
@@ -59,7 +59,7 @@ are the same, promoting replayability and strategic depth.
 **Resource management:**
 
 * There are three main resources: Gold, Spice and Silk. Both Spice and Silk have
-  a different value in gold
+  a different value in Gold
 * The player's caravan has limited capacity, forcing the player to trade and strategize.
 * It is possible to upgrade the caravan and its draft animals by trading.
 
@@ -94,7 +94,7 @@ are the same, promoting replayability and strategic depth.
 
 ## Player experience goals
 
-* **Competitivness:** The player wants to be the first and the most wealthy>
+* **Competitivness:** The player wants to be the first and the most wealthy
 * **High stakes:** Even the very first turns are important to victory, forcing
                    the player to think long-term from the start.
 * **Novelty:** The game is randomized, so the player cannot choose the same approach
