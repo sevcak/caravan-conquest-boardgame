@@ -57,15 +57,23 @@ equipment and gold.
     - You interact with a tile only when you end your turn on it,
       not when you are moving through.
 
-    - On the end of your turn, draw an encounter card from the encounter deck
-      corresponding to the tile type you are standing on.
+    - On the end of your turn, draw an encounter card (see next section
+      **Special encounters**)
 
     - Trade Camps: Trade goods for gold, or vice-versa.
 
     - Cities: Buy or sell equipment with gold
       (see [Resource and Caravan Management](#resource-and-caravan-management)).
 
-4. **Special encounters:** draw a special encounter at the end of your turn.
+4. **Special encounters:**
+
+    - Draw an encounter card corresponding to the tile type you are standing on
+      at the end of your turn.
+
+    - Special encounter cards are not drawn on **City** and **Trade Camp**.
+
+    - If encounter tells you to give up more resources than you currently have,
+      give up only as much, as you have.
 
 5. **Treasure:** Collect the treasure. Treasure is a special resource
                  that cannot be traded during the game, but weighs only 1 unit
