@@ -40,6 +40,7 @@
             gold: 10,
             spice: 10,
             silk: 5,
+            treasure: 0,
             capacity: 90,
         };
 
@@ -50,6 +51,7 @@
                     gold: initial_stats.gold,
                     spice: initial_stats.spice,
                     silk: initial_stats.silk,
+                    treasure: initial_stats.treasure,
                     capacity: initial_stats.capacity,
                 };
             }
@@ -68,19 +70,38 @@
                     <div class="player-content">
                         <div class="resource-inputs">
                             <div class="input-group">
-                                <label>Gold:</label>
+                                <label>
+                                    <img src="../assets/images/resources/gold/gold_001.png" alt="gold">
+                                    Gold:
+                                </label>
                                 <input type="number" class="gold" value="${this.resources.gold}" min="0">
                             </div>
                             <div class="input-group">
-                                <label>Spice:</label>
+                                <label>
+                                    <img src="../assets/images/resources/spice/spice_001.png" alt="spice">
+                                    Spice:
+                                </label>
                                 <input type="number" class="spice" value="${this.resources.spice}" min="0">
                             </div>
                             <div class="input-group">
-                                <label>Silk:</label>
+                                <label>
+                                    <img src="../assets/images/resources/silk/silk_001.png" alt="silk">
+                                    Silk:
+                                </label>
                                 <input type="number" class="silk" value="${this.resources.silk}" min="0">
                             </div>
                             <div class="input-group">
-                                <label>Capacity:</label>
+                                <label>
+                                    <img src="../assets/images/treasure/chest.png" alt="treasure">
+                                    Treasure:
+                                </label>
+                                <input type="number" class="treasure" value="${this.resources.treasure}" min="0">
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <img src="../assets/images/icons/carry_capacity.png" alt="capacity">
+                                    Capacity:
+                                </label>
                                 <input type="number" class="capacity" value="${this.resources.capacity}" min="0">
                             </div>
                         </div>
