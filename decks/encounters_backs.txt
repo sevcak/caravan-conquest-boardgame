@@ -1,0 +1,20 @@
+LINKMULTI = Count
+LINK = "encounters.csv"
+
+; Settings
+UNIT = MM
+PAGE = 210, 297, PORTRAIT
+BORDER = RECTANGLE, #000000, 1
+MARGINS = 10, 10, 5, 5
+CARDSIZE = 60, 80
+
+VISUAL=GS, 10, 10
+;Image(size)
+IMAGE="1-{(IMAGE)}",[IMAGE],{17009/-450}%,{-6793/600}%,180%,120%,0
+;Font(size)
+FONT=Baskerville Old Face,18,I,#000000,#FFFFFF,0,0,0,0,2
+;Font(size)
+FONT=Baskerville Old Face,10,,#000000
+;Image(size)
+IMAGE=,"Z:\home\sevcak\stud\pa215\caravan-conquest\assets\images\logo\caravan_conquest_logo_orange.png",{2221/450}%,{19111/600}%,90%,30%,0,N
+ENDVISUAL

@@ -1,5 +1,5 @@
 Name,Type,Speed,Cost,Description,Image,Count
+Donkey,Donkey,3,5,,../assets/images/steads/donkeys/donkey.png,6
+Roach,Horse,4,10,,../assets/images/steads/horses/horse_02.png,6
 Epona,Horse,5,20,,../assets/images/steads/horses/horse.png,6
-Roach,Horse,4,10,,../assets/images/steads/horses/horse_02.png,0
-Donkey,Donkey,3,5,,../assets/images/steads/donkeys/donkey.png,0
 Fidget,Camel,4,15,Not affected by the desert speed penalty.,../assets/images/steads/camels/camel.png,6
