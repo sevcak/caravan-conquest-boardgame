@@ -72,7 +72,7 @@ equipment and gold.
 
     - Special encounter cards are not drawn on **City** and **Trade Camp**.
 
-    - If encounter tells you to give up more resources than you currently have,
+    - If the encounter tells you to give up more resources than you currently have,
       give up only as much, as you have.
 
 5. **Treasure:** Collect the treasure. Treasure is a special resource
@@ -86,7 +86,7 @@ Each tile type has its own effect and special encounters.
 Consult the Legend sheet for regular tile effects that apply every time.
 Some tiles can even affect your movement speed on the next turn, so read closely!
 
-For different tile types there are decks of cards containing special encounters.
+There are decks of cards containing special encounters for different tile types.
 You draw from one of these decks at the end of your turn, depending on which tile
 you are on. The encounter card takes effect immediately, unless
 the card itself specifies otherwise.
@@ -106,7 +106,7 @@ There are two types of Trade camps:
 - Once owned, any equipment or animal's worth becomes the half of its original price[^1].
   You can sell the equipment for this price in gold[^2].
 
-[^1]: In case the half is not a whole number, it is rounded down to the closest integer.
+[^1]: In case the half is not a whole number, it is rounded down.
 [^2]: You must always have exactly two draft animals and one caravan.
 
 ## Winning the Game
