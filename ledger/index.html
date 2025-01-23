@@ -36,7 +36,7 @@
     </div>
 
     <script>
-        const initial_stats = {
+        const initialStats = {
             gold: 10,
             spice: 10,
             silk: 5,
@@ -48,16 +48,16 @@
             constructor(playerNumber) {
                 this.playerNumber = playerNumber;
                 this.resources = {
-                    gold: initial_stats.gold,
-                    spice: initial_stats.spice,
-                    silk: initial_stats.silk,
-                    treasure: initial_stats.treasure,
-                    capacity: initial_stats.capacity,
+                    gold: initialStats.gold,
+                    spice: initialStats.spice,
+                    silk: initialStats.silk,
+                    treasure: initialStats.treasure,
+                    capacity: initialStats.capacity,
                 };
             }
 
             calculateTotals() {
-                const total = this.resources.gold + this.resources.spice + this.resources.silk;
+                const total = this.resources.gold + this.resources.spice + this.resources.silk + this.resources.treasure;
                 const remaining = this.resources.capacity - total;
                 return { total, remaining };
             }
@@ -74,35 +74,55 @@
                                     <img src="../assets/images/resources/gold/gold_001.png" alt="gold">
                                     Gold:
                                 </label>
-                                <input type="number" class="gold" value="${this.resources.gold}" min="0">
+                                <div class="input">
+                                    <button class="button decrement">-</button>
+                                    <input type="number" class="gold" value="${this.resources.gold}" min="0">
+                                    <button class="button increment">+</button>
+                                </div>
                             </div>
                             <div class="input-group">
                                 <label>
                                     <img src="../assets/images/resources/spice/spice_001.png" alt="spice">
                                     Spice:
                                 </label>
-                                <input type="number" class="spice" value="${this.resources.spice}" min="0">
+                                <div class="input">
+                                    <button class="button decrement">-</button>
+                                    <input type="number" class="spice" value="${this.resources.spice}" min="0">
+                                    <button class="button increment">+</button>
+                                </div>
                             </div>
                             <div class="input-group">
                                 <label>
                                     <img src="../assets/images/resources/silk/silk_001.png" alt="silk">
                                     Silk:
                                 </label>
-                                <input type="number" class="silk" value="${this.resources.silk}" min="0">
+                                <div class="input">
+                                    <button class="button decrement">-</button>
+                                    <input type="number" class="silk" value="${this.resources.silk}" min="0">
+                                    <button class="button increment">+</button>
+                                </div>
                             </div>
                             <div class="input-group">
                                 <label>
                                     <img src="../assets/images/treasure/chest.png" alt="treasure">
                                     Treasure:
                                 </label>
-                                <input type="number" class="treasure" value="${this.resources.treasure}" min="0">
+                                <div class="input">
+                                    <button class="button decrement">-</button>
+                                    <input type="number" class="treasure" value="${this.resources.treasure}" min="0">
+                                    <button class="button increment">+</button>
+                                </div>
                             </div>
                             <div class="input-group">
                                 <label>
                                     <img src="../assets/images/icons/carry_capacity.png" alt="capacity">
                                     Capacity:
                                 </label>
-                                <input type="number" class="capacity" value="${this.resources.capacity}" min="0">
+                                <div class="input">
+                                    <button class="button decrement">-</button>
+                                    <input type="number" class="capacity" value="${this.resources.capacity}" min="0">
+                                    <button class="button increment">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class="totals">
@@ -118,17 +138,12 @@
             }
 
             resetStats() {
-                this.resources = {
-                   gold: initial_stats.gold,
-                   spice: initial_stats.spice,
-                   silk: initial_stats.silk,
-                   capacity: initial_stats.capacity,
-                   animal_1_speed: initial_stats.animal_1_speed,
-                   animal_2_speed: initial_stats.animal_2_speed
-                }
+                Object.assign(this.resources, initialStats);
+
             }
 
             setupEventListeners(card) {
+                const inputContainers = card.querySelectorAll('.input');
                 const inputs = card.querySelectorAll('input');
                 const resetButton = card.querySelector('.reset-button');
                 const totalResourcesSpan = card.querySelector('.total-resources');
@@ -164,21 +179,36 @@
                     }
                 };
 
-                inputs.forEach(input => {
+                inputContainers.forEach((inputContainer, idx) => {
+                    const input = inputs[idx];
+
                     input.addEventListener('change', (e) => {
                         const value = parseInt(e.target.value) || 0;
                         this.resources[input.className] = value;
                         updateTotals();
                     });
+
+                    console.log("TEST");
+                    const container = input;
+                    console.log(container);
+
+                    const incElem = inputContainer.querySelector(".increment");
+                    incElem && incElem.addEventListener('click', (e) => {
+                        input.value++;
+                        input.dispatchEvent(new Event('change'));
+                    })
+                    const decElem = inputContainer.querySelector(".decrement");
+                    decElem && decElem.addEventListener('click', (e) => {
+                        if (input.value > 0) {
+                            input.value--;
+                            input.dispatchEvent(new Event('change'));
+                        }
+                    })
                 });
 
                 resetButton.addEventListener('click', () => {
-                    this.resources = {
-                        gold: 0,
-                        spice: 0,
-                        silk: 0,
-                        capacity: 10
-                    };
+                    this.resetStats();
+
                     inputs.forEach(input => {
                         input.value = this.resources[input.className];
                     });
