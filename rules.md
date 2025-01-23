@@ -19,7 +19,7 @@ equipment and gold.
       - *Basic Caravan*
       - 2x *Donkey*
       - 10 *Gold*
-      - 10 *Spice*
+      - 10 *Spice*conquest
       - 5 *Silk*
 
       However, you can try experimenting with these, too!
@@ -120,3 +120,10 @@ There are two types of Trade camps:
   - Players who have not reached the Finish tile automatically lose, with their
     total wealth being zero.
   - Count your goods and gold; the player with highest total wealth wins!
+
+## The Travelling Merchant's Ledger
+
+- U can use the web app located at
+  [https://sevcak.github.io/caravan-conquest-boardgame/](https://sevcak.github.io/caravan-conquest-boardgame/) to help you track your resources and remaining caravan capacity
+
+![Ledger](./assets/qr_code/qr_code.png){width=40% align="center"}\
